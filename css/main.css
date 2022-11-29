@@ -447,8 +447,8 @@ main ol li:hover{
     /* MQ MERCH */
 
     .producto-uno, .producto-dos{
-        height: 500px;
-        width: 400px;
+        height: 300px;
+        width: 200px;
     }
 
     .promo{
