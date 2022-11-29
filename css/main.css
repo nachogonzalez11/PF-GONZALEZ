@@ -412,7 +412,59 @@ main ol li:hover{
 
     /* MQ MERCH */
 
+    .album-uno{
+        height: 200px;
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .album-dos{
+        height: 200px;
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .album-tres{
+        height: 200px;
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .album-cuatro{
+        height: 200px;
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+    }
+
     .portadaMerch{
+        display: none;
+    }
+
+    /* MQ MERCH */
+
+    .producto-uno, .producto-dos{
+        height: 400px;
+        width: 470px;
+    }
+
+    .promo{
+        display: flex;
+        align-items: center;
+    }
+
+    .promo-dos, .promo-tres{
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+    }
+
+    /* MQ FOOTER */
+
+    footer{
         display: none;
     }
 }
