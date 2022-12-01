@@ -1,0 +1,15 @@
+/* estilos ventana galeria */
+main.main-galery{
+    background-color: $color-secundario;
+    div.ysyGalery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 300px 300px;
+        gap: 15px;
+        margin: 10px;
+        img.img-galery{
+            height: 300px;
+            width: 500px;
+        }
+    }
+}

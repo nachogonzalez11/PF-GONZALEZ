@@ -1,0 +1,110 @@
+/* eslios ventana discografia */
+main.main-disc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 500px 70px 500px 70px 500px 70px 500px;
+
+    grid-template-areas: 
+        "nombre-ant nombre-ant"
+        "disco-ant tracklist-ant"
+        "nombre-ham nombre-ham"
+        "disco-ham tracklist-ham"
+        "nombre-meb nombre-meb"
+        "disco-meb tracklist-meb"
+        "nombre-tdv nombre-tdv"
+        "disco-tdv tracklist-tdv";
+    h2.antezana{
+        background-color: black;
+        color: whitesmoke;
+        grid-area: nombre-ant;
+    }
+    div.album-uno{
+        display: flex;
+        justify-content: center;
+        grid-area: disco-ant;
+    }
+    img.img-ant{
+        height: 500px;
+    }
+    ol.track-list-antezana{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        grid-area: tracklist-ant;
+    }
+    h2.ham{
+        background-color: black;
+        color: whitesmoke;
+        grid-area: nombre-ham;
+    }
+    img.img-ham{
+        height: 500px;
+    }
+    div.album-dos{
+        display: flex;
+        justify-content: center;
+        grid-area: disco-ham;
+    }
+    ol.track-list-ham{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        grid-area: tracklist-ham;
+    }
+    h2.meb{
+        background-color: black;
+        color: whitesmoke;
+        grid-area: nombre-meb;
+    }
+    img.img-meb{
+        height: 500px;
+    }
+    div.album-tres{
+        display: flex;
+        justify-content: center;
+        grid-area: disco-meb;
+    }
+    ol.track-list-meb{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        grid-area: tracklist-meb;
+    }
+    h2.tdv{
+        background-color: black;
+        color: whitesmoke;
+        grid-area: nombre-tdv;
+    }
+    img.img-tdv{
+        height: 500px;
+    }
+    div.album-cuatro{
+        display: flex;
+        justify-content: center;
+        grid-area: disco-tdv;
+    }
+    ol.track-list-tdvU{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 20px;
+        margin: 30px;
+        grid-area: tracklist-tdv;
+    }
+    ol.track-list-tdvD{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        margin: 30px;
+        grid-area: tracklist-tdv;
+    }
+}

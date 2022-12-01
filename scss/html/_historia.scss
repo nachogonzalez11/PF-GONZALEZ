@@ -1,0 +1,22 @@
+/* estilos de la ventana historia */
+main.main-historia{
+    h2.historiaSubtitulo{
+        background-color: black;
+        color: white;
+        text-shadow: 2px 3px 5px white;
+        padding: 2rem;
+    }
+    div.historias{
+        display: flex;
+        flex-flow: column;
+        gap: 20px;
+        margin: 50px;
+        div.historia-uno{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+    }
+}

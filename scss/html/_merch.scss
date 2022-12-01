@@ -1,0 +1,63 @@
+/* estilos ventana merch */
+main.main-merch{
+    h2{
+        background-color: black;
+        color: white;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    div.portadaMerch{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px 20px 0px;
+    }
+    section.contain{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        div.promo{
+            display: flex;
+            flex-flow: column;
+            img.producto-uno{
+                height: 700px;
+                width: 520px;
+            }
+            .productoDescripcion{
+                color: white;
+            }
+        }
+        div.promo-dos{
+            img.producto-dos{
+                height: 700px;
+                width: 520px;
+            }
+            h3.productoDescripcion{
+                color: white;
+            }
+            p.productoDescripcion{
+                color: white;
+            }
+        }
+        div.promo-tres{
+            img.producto-uno{
+                height: 700px;
+                width: 520px;
+            }
+            h3.productoDescripcion{
+                color: white;
+            }
+            p.productoDescripcion{
+                color: white;
+            }
+        }
+    }
+    section.sorteo{
+        background-color: black;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        padding: 20px;
+    }
+}

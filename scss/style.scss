@@ -1,0 +1,206 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// enlaces 
+@import "utilidades/variables";
+@import "html/index";
+@import "html/galeria";
+@import "html/historia";
+@import "html/discografia";
+@import "html/merch";
+
+body{
+    background-color: $color-principal;
+}
+/*menu*/
+header{
+    h1{
+        font-size: 150px;
+        text-shadow: 1px 1px 2px black;
+        background-color: $color-secundario;
+        color: black;
+    }
+    h2{
+        background-color: $color-secundario;
+        display: flex;
+        justify-content: center;
+        text-shadow: 2px 3px 5px black;
+        margin: 0px;
+        padding: 20px;
+    }
+    nav{
+        div{
+            div{
+                display: flex;
+                justify-content: space-evenly;
+                gap: 100px;
+                color: black;
+                ul{
+                    li{
+                        text-decoration: none;
+                        color: black;
+                        background-color: $color-secundario;
+                        margin: 5px;
+                        padding: 5px 50px;
+                        border-radius: 100px;
+                        box-shadow: 2px 3px 5px black;
+                        font-size: 18px;
+                        &:hover{
+                            font-weight: bold;
+                            transform: scale(0.9);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*footer*/
+footer{
+    background-color: rgb(238, 144, 36);
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+@media screen and (max-width:768px){
+
+    /* MQ HOME */
+
+    .video{
+        display: none;
+    }
+
+    /* MQ GALERIA */
+
+    .main-galery .ysyGalery{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-galery{
+        height: 200px;
+        width: 300px;
+    }
+
+    /* MQ HISTORIA */
+
+    .historias{
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* MQ DISCOGRAFIA */
+
+    main ol.track-list-antezana{
+        display: none;
+    }
+
+    main ol.track-list-ham{
+        display: none;
+    }
+
+    main ol.track-list-meb{
+        display: none;
+    }
+
+    main ol.track-list-tdvU{
+        display: none;
+    }
+
+    main ol.track-list-tdvD{
+        display: none;
+    }
+
+    .album-uno{
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .album-dos{
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .album-tres{
+        justify-content: center;
+        margin: 15px;
+    }
+
+    .album-cuatro{
+        justify-content: center;
+        margin: 15px;
+    }
+
+    section{
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    /* MQ MERCH */
+
+    .album-uno{
+        height: 200px;
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .album-dos{
+        height: 200px;
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .album-tres{
+        height: 200px;
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .album-cuatro{
+        height: 200px;
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .portadaMerch{
+        display: none;
+    }
+
+    /* MQ MERCH */
+
+    .producto-uno, .producto-dos{
+        height: 300px;
+        width: 200px;
+    }
+
+    .promo{
+        display: flex;
+        align-items: center;
+    }
+
+    .promo-dos, .promo-tres{
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+    }
+
+    /* MQ FOOTER */
+
+    footer{
+        display: none;
+    }
+}
