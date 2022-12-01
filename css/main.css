@@ -66,7 +66,7 @@ main.main-historia div.historias {
     justify-content: center;
     margin: 20px; }
 
-/* eslios ventana discografia */
+/* eslios ventana discografia*/
 main.main-disc {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -232,7 +232,8 @@ header nav div div {
     font-size: 18px; }
     header nav div div ul li:hover {
       font-weight: bold;
-      transform: scale(0.9); }
+      transform: scale(0.9);
+      box-shadow: 1px 1px 2px black; }
 
 /*footer*/
 footer {
@@ -246,65 +247,74 @@ footer {
   .video {
     display: none; }
   /* MQ GALERIA */
-  .main-galery .ysyGalery {
+  main.main-galery div.ysyGalery {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center; }
-  .img-galery {
-    height: 200px;
-    width: 300px; }
+    main.main-galery div.ysyGalery img.ysy-galery {
+      height: 200px;
+      width: 300px; }
   /* MQ HISTORIA */
   .historias {
     font-size: 1rem;
     align-items: center;
     justify-content: center; }
   /* MQ DISCOGRAFIA */
-  main ol.track-list-antezana {
-    display: none; }
-  main ol.track-list-ham {
-    display: none; }
-  main ol.track-list-meb {
-    display: none; }
-  main ol.track-list-tdvU {
-    display: none; }
-  main ol.track-list-tdvD {
-    display: none; }
-  .album-uno {
+  main.main-disc {
+    display: flex;
     justify-content: center;
-    margin: 15px; }
-  .album-dos {
-    justify-content: center;
-    margin: 15px; }
-  .album-tres {
-    justify-content: center;
-    margin: 15px; }
-  .album-cuatro {
-    justify-content: center;
-    margin: 15px; }
+    flex-flow: column;
+    gap: 10rem; }
+    main.main-disc h2.antezana {
+      display: none; }
+    main.main-disc div.album-uno img.img-ant {
+      height: 200px; }
+    main.main-disc ol.track-list-antezana {
+      display: none; }
+    main.main-disc h2.ham {
+      display: none; }
+    main.main-disc div.album-dos img.img-ham {
+      height: 200px; }
+    main.main-disc ol.track-list-ham {
+      display: none; }
+    main.main-disc h2.meb {
+      display: none; }
+    main.main-disc div.album-tres img.img-meb {
+      height: 200px; }
+    main.main-disc ol.track-list-meb {
+      display: none; }
+    main.main-disc h2.tdv {
+      display: none; }
+    main.main-disc div.album-cuatro img.img-tdv {
+      height: 200px; }
+    main.main-disc ol.track-list-tdvU {
+      display: none; }
+    main.main-disc ol.track-list-tdvD {
+      display: none; }
   section {
     display: flex;
     flex-flow: column;
     justify-content: center; }
   /* MQ MERCH */
   .album-uno {
-    height: 200px;
-    width: 300px;
+    height: 100px;
+    width: 200px;
     padding: 20px;
     margin: 20px; }
   .album-dos {
-    height: 200px;
-    width: 300px;
+    height: 100px;
+    width: 200px;
     padding: 20px;
     margin: 20px; }
   .album-tres {
-    height: 200px;
-    width: 300px;
+    height: 100px;
+    width: 200px;
     padding: 20px;
     margin: 20px; }
   .album-cuatro {
-    height: 200px;
-    width: 300px;
+    height: 100px;
+    width: 200px;
     padding: 20px;
     margin: 20px; }
   .portadaMerch {

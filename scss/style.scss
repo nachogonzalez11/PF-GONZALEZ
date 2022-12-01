@@ -53,6 +53,7 @@ header{
                         &:hover{
                             font-weight: bold;
                             transform: scale(0.9);
+                            box-shadow: 1px 1px 2px black;
                         }
                     }
                 }
@@ -78,16 +79,17 @@ footer{
 
     /* MQ GALERIA */
 
-    .main-galery .ysyGalery{
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .img-galery{
-        height: 200px;
-        width: 300px;
+    main.main-galery{
+        div.ysyGalery{
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            img.ysy-galery{
+                height: 200px;
+                width: 300px;
+            }
+        }
     }
 
     /* MQ HISTORIA */
@@ -100,44 +102,59 @@ footer{
 
     /* MQ DISCOGRAFIA */
 
-    main ol.track-list-antezana{
-        display: none;
-    }
-
-    main ol.track-list-ham{
-        display: none;
-    }
-
-    main ol.track-list-meb{
-        display: none;
-    }
-
-    main ol.track-list-tdvU{
-        display: none;
-    }
-
-    main ol.track-list-tdvD{
-        display: none;
-    }
-
-    .album-uno{
+    main.main-disc{
+        display: flex;
         justify-content: center;
-        margin: 15px;
-    }
-
-    .album-dos{
-        justify-content: center;
-        margin: 15px;
-    }
-
-    .album-tres{
-        justify-content: center;
-        margin: 15px;
-    }
-
-    .album-cuatro{
-        justify-content: center;
-        margin: 15px;
+        flex-flow: column;
+        gap: 10rem;
+        
+        h2.antezana{
+            display: none;
+        }
+        div.album-uno{
+            img.img-ant{
+                height: 200px;
+            }
+        }
+        ol.track-list-antezana{
+            display: none;
+        }
+        h2.ham{
+            display: none;
+        }
+        div.album-dos{
+            img.img-ham{
+                height: 200px;
+            }
+        }
+        ol.track-list-ham{
+            display: none;
+        }
+        h2.meb{
+            display: none;
+        }
+        div.album-tres{
+            img.img-meb{
+                height: 200px;
+            }
+        }
+        ol.track-list-meb{
+            display: none;
+        }
+        h2.tdv{
+            display: none;
+        }
+        div.album-cuatro{
+            img.img-tdv{
+                height: 200px;
+            }
+        }
+        ol.track-list-tdvU{
+            display: none;
+        }
+        ol.track-list-tdvD{
+            display: none;
+        }
     }
 
     section{
@@ -149,29 +166,29 @@ footer{
     /* MQ MERCH */
 
     .album-uno{
-        height: 200px;
-        width: 300px;
+        height: 100px;
+        width: 200px;
         padding: 20px;
         margin: 20px;
     }
 
     .album-dos{
-        height: 200px;
-        width: 300px;
+        height: 100px;
+        width: 200px;
         padding: 20px;
         margin: 20px;
     }
 
     .album-tres{
-        height: 200px;
-        width: 300px;
+        height: 100px;
+        width: 200px;
         padding: 20px;
         margin: 20px;
     }
 
     .album-cuatro{
-        height: 200px;
-        width: 300px;
+        height: 100px;
+        width: 200px;
         padding: 20px;
         margin: 20px;
     }
