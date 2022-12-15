@@ -103,57 +103,72 @@ footer{
     /* MQ DISCOGRAFIA */
 
     main.main-disc{
-        display: flex;
-        justify-content: center;
-        flex-flow: column;
-        gap: 10rem;
-        h2.antezana{
-            display: none;
-        }
-        div.album-uno{
+        display: grid;
+        grid-template-columns: 13rem 13rem;
+        grid-template-rows: 4rem 33rem;
+
+        grid-template-areas: 
+            "nombre-ant nombre-ant"
+            "disco-ant disco-ant"
+            "nombre-ham nombre-ham"
+            "disco-ham disco-ham"
+            "nombre-meb nombre-meb"
+            "disco-meb disco-meb"
+            "nombre-tdv nombre-tdv"
+            "disco-tdv disco-tdv";
+
+            h2.antezana{
+                background-color: black;
+                color: whitesmoke;
+                grid-area: nombre-ant;
+            }
+            div.album-uno{
+                display: flex;
+                justify-content: center;
+                grid-area: disco-ant;
+            }
             img.img-ant{
-                height: 200px;
+                height: 500px;
             }
-        }
-        ol.track-list-antezana{
-            display: none;
-        }
-        h2.ham{
-            display: none;
-        }
-        div.album-dos{
+            h2.ham{
+                background-color: black;
+                color: whitesmoke;
+                grid-area: nombre-ham;
+            }
             img.img-ham{
-                height: 200px;
+                height: 500px;
             }
-        }
-        ol.track-list-ham{
-            display: none;
-        }
-        h2.meb{
-            display: none;
-        }
-        div.album-tres{
+            div.album-dos{
+                display: flex;
+                justify-content: center;
+                grid-area: disco-ham;
+            }
+            h2.meb{
+                background-color: black;
+                color: whitesmoke;
+                grid-area: nombre-meb;
+            }
             img.img-meb{
-                height: 200px;
+                height: 500px;
             }
-        }
-        ol.track-list-meb{
-            display: none;
-        }
-        h2.tdv{
-            display: none;
-        }
-        div.album-cuatro{
+            div.album-tres{
+                display: flex;
+                justify-content: center;
+                grid-area: disco-meb;
+            }
+            h2.tdv{
+                background-color: black;
+                color: whitesmoke;
+                grid-area: nombre-tdv;
+            }
             img.img-tdv{
-                height: 200px;
+                height: 500px;
             }
-        }
-        ol.track-list-tdvU{
-            display: none;
-        }
-        ol.track-list-tdvD{
-            display: none;
-        }
+            div.album-cuatro{
+                display: flex;
+                justify-content: center;
+                grid-area: disco-tdv;
+            }
     }
 
     section{
@@ -162,45 +177,95 @@ footer{
         justify-content: center;
     }
 
+    
+
     /* MQ MERCH */
 
-    .album-uno{
-        height: 100px;
-        width: 200px;
-        padding: 20px;
-        margin: 20px;
+    main.main-merch{
+        div.portadaMerch{
+            display: none;
+        }
+        section.contain{
+            div.promo{
+                img.producto-uno{
+                    height: 600px;
+                    width: 400px;
+                }
+            }
+            div.promo-dos{
+                img.producto-dos{
+                    height: 600px;
+                    width: 400px;
+                }
+            }
+            div.promo-tres{
+                img.producto-uno{
+                    height: 600px;
+                    width: 400px;
+                }
+            }
+        }
     }
 
-    .album-dos{
-        height: 100px;
-        width: 200px;
-        padding: 20px;
-        margin: 20px;
-    }
+    /* MQ FOOTER */
 
-    .album-tres{
-        height: 100px;
-        width: 200px;
-        padding: 20px;
-        margin: 20px;
-    }
-
-    .album-cuatro{
-        height: 100px;
-        width: 200px;
-        padding: 20px;
-        margin: 20px;
-    }
-
-    .portadaMerch{
+    footer{
         display: none;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    /* MQ HOME */
+    main.index{
+        div.epigrafeHome{
+            h3{
+                display: none;
+            }
+        }
+    }
+    section.videoResumen{
+        div.textoResumen{
+            h4{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    /* MQ MERCH */
+
+    main.main-merch{
+        div.portadaMerch{
+            display: none;
+        }
+        section.contain{
+            div.promo{
+                img.producto-uno{
+                    height: 400px;
+                    width: 300px;
+                }
+            }
+            div.promo-dos{
+                img.producto-dos{
+                    height: 400px;
+                    width: 300px;
+                }
+            }
+            div.promo-tres{
+                img.producto-uno{
+                    height: 400px;
+                    width: 300px;
+                }
+            }
+        }
     }
 
     /* MQ MERCH */
 
     .producto-uno, .producto-dos{
-        height: 300px;
-        width: 200px;
+        height: 100px;
+        width: 30px;
     }
 
     .promo{
@@ -215,7 +280,7 @@ footer{
     }
 
     /* MQ FOOTER */
-
+    
     footer{
         display: none;
     }

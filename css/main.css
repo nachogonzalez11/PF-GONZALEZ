@@ -262,67 +262,93 @@ footer {
     justify-content: center; }
   /* MQ DISCOGRAFIA */
   main.main-disc {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    gap: 10rem; }
+    display: grid;
+    grid-template-columns: 13rem 13rem;
+    grid-template-rows: 4rem 33rem;
+    grid-template-areas: "nombre-ant nombre-ant" "disco-ant disco-ant" "nombre-ham nombre-ham" "disco-ham disco-ham" "nombre-meb nombre-meb" "disco-meb disco-meb" "nombre-tdv nombre-tdv" "disco-tdv disco-tdv"; }
     main.main-disc h2.antezana {
-      display: none; }
-    main.main-disc div.album-uno img.img-ant {
-      height: 200px; }
-    main.main-disc ol.track-list-antezana {
-      display: none; }
+      background-color: black;
+      color: whitesmoke;
+      grid-area: nombre-ant; }
+    main.main-disc div.album-uno {
+      display: flex;
+      justify-content: center;
+      grid-area: disco-ant; }
+    main.main-disc img.img-ant {
+      height: 500px; }
     main.main-disc h2.ham {
-      display: none; }
-    main.main-disc div.album-dos img.img-ham {
-      height: 200px; }
-    main.main-disc ol.track-list-ham {
-      display: none; }
+      background-color: black;
+      color: whitesmoke;
+      grid-area: nombre-ham; }
+    main.main-disc img.img-ham {
+      height: 500px; }
+    main.main-disc div.album-dos {
+      display: flex;
+      justify-content: center;
+      grid-area: disco-ham; }
     main.main-disc h2.meb {
-      display: none; }
-    main.main-disc div.album-tres img.img-meb {
-      height: 200px; }
-    main.main-disc ol.track-list-meb {
-      display: none; }
+      background-color: black;
+      color: whitesmoke;
+      grid-area: nombre-meb; }
+    main.main-disc img.img-meb {
+      height: 500px; }
+    main.main-disc div.album-tres {
+      display: flex;
+      justify-content: center;
+      grid-area: disco-meb; }
     main.main-disc h2.tdv {
-      display: none; }
-    main.main-disc div.album-cuatro img.img-tdv {
-      height: 200px; }
-    main.main-disc ol.track-list-tdvU {
-      display: none; }
-    main.main-disc ol.track-list-tdvD {
-      display: none; }
+      background-color: black;
+      color: whitesmoke;
+      grid-area: nombre-tdv; }
+    main.main-disc img.img-tdv {
+      height: 500px; }
+    main.main-disc div.album-cuatro {
+      display: flex;
+      justify-content: center;
+      grid-area: disco-tdv; }
   section {
     display: flex;
     flex-flow: column;
     justify-content: center; }
   /* MQ MERCH */
-  .album-uno {
-    height: 100px;
-    width: 200px;
-    padding: 20px;
-    margin: 20px; }
-  .album-dos {
-    height: 100px;
-    width: 200px;
-    padding: 20px;
-    margin: 20px; }
-  .album-tres {
-    height: 100px;
-    width: 200px;
-    padding: 20px;
-    margin: 20px; }
-  .album-cuatro {
-    height: 100px;
-    width: 200px;
-    padding: 20px;
-    margin: 20px; }
-  .portadaMerch {
+  main.main-merch div.portadaMerch {
     display: none; }
+  main.main-merch section.contain div.promo img.producto-uno {
+    height: 600px;
+    width: 400px; }
+  main.main-merch section.contain div.promo-dos img.producto-dos {
+    height: 600px;
+    width: 400px; }
+  main.main-merch section.contain div.promo-tres img.producto-uno {
+    height: 600px;
+    width: 400px; }
+  /* MQ FOOTER */
+  footer {
+    display: none; } }
+
+@media screen and (max-width: 480px) {
+  /* MQ HOME */
+  main.index div.epigrafeHome h3 {
+    display: none; }
+  section.videoResumen div.textoResumen h4 {
+    display: flex;
+    justify-content: center; }
+  /* MQ MERCH */
+  main.main-merch div.portadaMerch {
+    display: none; }
+  main.main-merch section.contain div.promo img.producto-uno {
+    height: 400px;
+    width: 300px; }
+  main.main-merch section.contain div.promo-dos img.producto-dos {
+    height: 400px;
+    width: 300px; }
+  main.main-merch section.contain div.promo-tres img.producto-uno {
+    height: 400px;
+    width: 300px; }
   /* MQ MERCH */
   .producto-uno, .producto-dos {
-    height: 300px;
-    width: 200px; }
+    height: 100px;
+    width: 30px; }
   .promo {
     display: flex;
     align-items: center; }
